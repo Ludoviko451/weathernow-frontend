@@ -1,0 +1,6 @@
+<ng-container *ngIf="weatherInfo as data">
+    <app-location-card [location]="data.location"></app-location-card>
+    <app-weather-card></app-weather-card>
+  </ng-container>
+  
+<button (click)="retrieveData()">Presiona para ver la temperatura de tu localidad</button>
