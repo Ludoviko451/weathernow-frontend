@@ -1,3 +1,19 @@
-<div>
-    <h1>{{location?.country}}</h1>
-</div>
+<div class="location-card">
+    <div class="location-card__container">
+      <img class="location-card__flag" [src]="'https://flagcdn.com/64x48/' + getCountryCode(location?.country) + '.png'" alt="Bandera">
+  
+      <h1 class="location-card__title">{{ location?.country }}</h1>
+  
+      <div class="location-card__info">
+        <h2 class="location-card__label">Ciudad</h2>
+        <p class="location-card__text">{{ location?.name }}</p>
+  
+        <h2 class="location-card__label">Región</h2>
+        <p class="location-card__text">{{ location?.region }}</p>
+  
+        <h2 class="location-card__label">Última vez escaneado</h2>
+        <p class="location-card__text">{{ location?.localtime }}</p>
+      </div>
+    </div>
+  </div>
+  

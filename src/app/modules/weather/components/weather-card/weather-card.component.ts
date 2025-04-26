@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { WeatherResponse } from 'src/app/core/services/models/weather.interface';
 
 @Component({
   selector: 'app-weather-card',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./weather-card.component.scss']
 })
 export class WeatherCardComponent {
-
+    @Input()weather?: WeatherResponse ;
+      
 }

@@ -1,6 +1,20 @@
-<ng-container *ngIf="weatherInfo as data">
-    <app-location-card [location]="data.location"></app-location-card>
-    <app-weather-card></app-weather-card>
+<div class="main-container">
+  <div>
+    <img src="assets/images/weathernow.png" alt="Logo" class="main-container__logo">
+  </div>
+  <ng-container *ngIf="weatherInfo as data">
+    <div class="cards-wrapper">
+      <app-location-card [location]="data.location"></app-location-card>
+      <app-weather-card [weather]="data"></app-weather-card>
+    </div>
   </ng-container>
   
-<button (click)="retrieveData()">Presiona para ver la temperatura de tu localidad</button>
+    
+    <button 
+    (click)="retrieveData()" 
+    [disabled]="!canRefresh" 
+    class="main-container__button">
+    {{ canRefresh ? 'Buscar Temperatura' : 'Espera ' + remainingTime + 's' }}
+  </button>
+  
+</div>

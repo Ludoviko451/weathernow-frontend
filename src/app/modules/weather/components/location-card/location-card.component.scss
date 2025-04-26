@@ -1,0 +1,42 @@
+.location-card {
+    color: white;
+    height: auto;
+    padding: 1.5rem;
+    border: 6px solid #7AC6D2;
+    border-radius: 1rem;
+    background-color: #3A59D1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .location-card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; // separa los elementos de forma consistente
+  }
+  
+  .location-card__flag {
+    width: 64px;
+    height: 48px;
+    object-fit: contain;
+  }
+  
+  .location-card__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .location-card__label {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    color: #3D90D7;
+  }
+  
+  .location-card__text {
+    font-size: 0.99rem;
+    margin: 0;
+  }
+  
