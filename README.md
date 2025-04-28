@@ -1,27 +1,59 @@
-# WeathernowFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+# WeatherNow🌦️
+![Angular](https://img.shields.io/badge/Angular-14-red?logo=angular)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Language](https://img.shields.io/badge/language-TypeScript-blue)
+![Localization](https://img.shields.io/badge/Localization-EN%2FES-yellowgreen)
 
-## Development server
+Aplicación web desarrollada en Angular para consultar el clima basado en la ubicación del usuario.  
+Web application developed with Angular to check the weather based on the user's location.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Descripción / Description
 
-## Code scaffolding
+WeatherNow permite / WeatherNow allows you to:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-   Obtener la temperatura actual. / Get the current temperature.
+    
+-   Mostrar el nombre de tu ubicación. / Display the name of your location.
+    
+-   Ver el último tiempo de actualización. / Show the last update time.
+    
+-   Mostrar el estado del cielo (despejado, nublado, etc.). / Display the sky condition (clear, cloudy, etc.).
+    
+-   Detectar automáticamente el idioma del navegador y traducir los textos a inglés o español. / Automatically detect the browser language and translate texts into English or Spanish.
+    
 
-## Build
+## Tecnologías / Technologies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-   Angular
+    
+-   TypeScript
+    
+-   SCSS
+    
+-   @ngx-translate/core (internacionalización / internationalization)
+    
+-   API de clima (WeatherAPI) / Weather API (WeatherAPI)
+    
+-   API de Localización (IpApi) / Location API (IpApi)
+    
 
-## Running unit tests
+## Instalación / Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Clonar el repositorio / Clone the repository:**
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    git clone https://github.com/Ludoviko451/weathernow-frontend
 
-## Further help
+**Instalar dependencias / Install dependencies:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+`npm install` 
+
+**Correr la aplicación / Run the application:**
+
+
+`ng serve` 
+
+Abrir en el navegador / Open in your browser:  
+[http://localhost:4200/](http://localhost:4200/)
