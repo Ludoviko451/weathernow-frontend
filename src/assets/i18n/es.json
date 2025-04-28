@@ -1,5 +1,16 @@
-{
+{ 
+  "ERRORS": {
+    "ERROR": "El servidor no esta disponible, intentelo mas tarde"
+  },
+  "LOCATION": {
+    "NAME": "Ciudad",
+    "REGION": "Región",
+    "LAST_SCAN": "Hora local"
+  },
+
   "WEATHER": {
+    "DAY": "Es de día",
+    "NIGHT": "Es de noche",
     "Sunny": "Soleado",
     "Clear": "Despejado",
     "Partly cloudy": "Parcialmente nublado",

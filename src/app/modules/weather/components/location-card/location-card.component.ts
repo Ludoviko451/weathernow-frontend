@@ -15,13 +15,12 @@ countries.registerLocale(en);
 export class LocationCardComponent {
   @Input() location?: WeatherLocation;
 
-  // Método para obtener el código de país a partir del nombre del país
   getCountryCode(countryName: string | undefined): string {
     if (!countryName) {
-      return 'unknown';  // Retorna un valor predeterminado si countryName es undefined
+      return 'unknown';  
     }
     const code = countries.getAlpha2Code(countryName, 'en');
-    console.log(code)
+  
     return code ? code.toLowerCase() : 'unknown';
   }
   

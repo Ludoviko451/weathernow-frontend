@@ -1,7 +1,7 @@
 <div class="weather-card">
     <div [ngSwitch]="weather?.current?.is_day">
-        <h1 *ngSwitchCase="1" class="weather-card__header--day">Es de día</h1>
-        <h1 *ngSwitchDefault class="weather-card__header--night">Es de noche</h1>
+        <h1 *ngSwitchCase="1" class="weather-card__header--day">  {{ 'WEATHER.DAY' | translate }}</h1>
+        <h1 *ngSwitchDefault class="weather-card__header--night"> {{ 'WEATHER.NIGHT' | translate }}</h1>
       </div>
     
 

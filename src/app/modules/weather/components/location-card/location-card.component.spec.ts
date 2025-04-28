@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LocationCardComponent } from './location-card.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('LocationCardComponent', () => {
   let component: LocationCardComponent;
@@ -8,7 +9,8 @@ describe('LocationCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LocationCardComponent]
+      declarations: [LocationCardComponent],
+      imports: [TranslateModule.forRoot()]
     })
     .compileComponents();
 
@@ -19,5 +21,10 @@ describe('LocationCardComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should get country code', () => {
+    const countryCode = component.getCountryCode('United States');
+    expect(countryCode).toBe('us');
   });
 });

@@ -5,13 +5,13 @@
       <h1 class="location-card__title">{{ location?.country }}</h1>
   
       <div class="location-card__info">
-        <h2 class="location-card__label">Ciudad</h2>
+        <h2 class="location-card__label">{{'LOCATION.NAME' | translate}}</h2>
         <p class="location-card__text">{{ location?.name }}</p>
   
-        <h2 class="location-card__label">Región</h2>
+        <h2 class="location-card__label">{{'LOCATION.REGION' | translate}}</h2>
         <p class="location-card__text">{{ location?.region }}</p>
   
-        <h2 class="location-card__label">Última vez escaneado</h2>
+        <h2 class="location-card__label">{{'LOCATION.LAST_SCAN' | translate}}</h2>
         <p class="location-card__text">{{ location?.localtime }}</p>
       </div>
     </div>

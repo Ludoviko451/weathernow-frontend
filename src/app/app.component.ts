@@ -8,8 +8,15 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('es');  // Usa 'es' como idioma por defecto
-    this.translate.use('es'); // Usar español si se quiere por defecto
+  
+    this.translate.addLangs(['en', 'es']);
+
+    this.translate.setDefaultLang('en');
+
+    const browserLang = this.translate.getBrowserLang();
+
+    this.translate.use(browserLang && browserLang.match(/en|es/) ? browserLang : 'en');
   }
+
   title = 'weathernow-frontend';
 }

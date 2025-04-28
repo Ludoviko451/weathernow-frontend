@@ -4,6 +4,7 @@ import { WeatherModule } from '../weather/components/weather.module';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from '../../app.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AppComponent } from '../../app.component';
   imports: [
     CommonModule,
     WeatherModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule.forChild()
   ],
 
   exports:[

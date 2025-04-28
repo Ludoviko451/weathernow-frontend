@@ -58,6 +58,7 @@ app-weather-card {
     width: 100%;
     max-width: 300px;
   }
+
   
   .main-container__button:disabled {
     background-color: #555;
@@ -76,3 +77,10 @@ app-weather-card {
     }
   }
   
+  .main-container__error{
+    background-color: #063966;
+    color: red;
+    border: 3px solid red;
+    padding: 10px;
+    border-radius: 10px;
+  }

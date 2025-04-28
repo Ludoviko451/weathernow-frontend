@@ -9,6 +9,9 @@
     </div>
   </ng-container>
   
+    <div *ngIf="errorMessage" class="main-container__error">
+      <p>{{ 'ERRORS.ERROR' | translate }}</p>
+    </div>
     
     <button 
     (click)="retrieveData()" 
